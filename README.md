@@ -11,5 +11,5 @@ macOS (OSX) のコマンドやプログラムのバージョンを Markdown 形�
 
 ### 関連記事
 
-- [macOS 同梱コマンドやプログラム言語のデフォルト・バージョン情報情報（High Sierra 新規インストール時）](https://qiita.com/drafts/c82ed038fee1a0b0792e) @ Qiita
+- [macOS 同梱コマンドやプログラム言語のデフォルト・バージョン情報情報（High Sierra 新規インストール時）](https://qiita.com/KEINOS/items/c82ed038fee1a0b0792e) @ Qiita
 
