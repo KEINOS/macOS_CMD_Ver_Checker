@@ -1,0 +1,78 @@
+[
+    {
+        "title": "bash",
+        "cmd": "bash --version"
+    },
+    {
+        "title": "brew",
+        "cmd": "brew -v"
+    },
+    {
+        "title": "cURL",
+        "cmd": "curl --version"
+    },
+    {
+        "title": "gcc",
+        "cmd": "gcc -v"
+    },
+    {
+        "title": "git",
+        "cmd": "git --version"
+    },
+    {
+        "title": "java",
+        "cmd": "java --version"
+    },
+    {
+        "title": "macOS",
+        "cmd": "sw_vers"
+    },
+    {
+        "title": "make",
+        "cmd": "make --version"
+    },
+    {
+        "title": "perl",
+        "cmd": "perl -v"
+    },
+    {
+        "title": "PHP",
+        "cmd": "php -v"
+    },
+    {
+        "title": "pip",
+        "cmd": "pip --version"
+    },
+    {
+        "title": "port",
+        "cmd": "version"
+    },
+    {
+        "title": "Pydoc",
+        "cmd": "pydoc modules"
+    },
+    {
+        "title": "Python",
+        "cmd": "python --version"
+    },
+    {
+        "title": "Python2",
+        "cmd": "python2 --version"
+    },
+    {
+        "title": "Python3",
+        "cmd": "python3 --version"
+    },
+    {
+        "title": "tidy",
+        "cmd": "tidy -v"
+    },
+    {
+        "title": "vi\/vim",
+        "cmd": "vi --version"
+    },
+    {
+        "title": "wget",
+        "cmd": "wget --version"
+    }
+]
