@@ -31,7 +31,7 @@ $result .= '（ABC順）' . PHP_EOL . PHP_EOL;
 // Loop
 echo 'Fetching version info .';
 foreach ($list_cmds as $cmd) {
-    $result .= drawHRwithIndex($cmd['title']);
+    $result .= drawHRwithIndex($cmd['title']); //ABC順付きの区切り線描画
     $result .= checkCmd($cmd);
     echo '.';
 }
@@ -71,7 +71,12 @@ function checkCmd($cmd)
 
     // version found
     if (0 === $return_var['return']) {
-        $version = 'v' . fetchVerFromArray($return_var['output']);
+        if (isCmdMan($cmd)) {
+            $version = fetchVerFromMan($return_var['output']);
+        } else {
+            $version = 'v' . fetchVerFromArray($return_var['output']);
+        }
+
         $result .= generateTitle($title, $version);
         $result .= PHP_EOL;
         $result .= generateCodeBlock($cmd, $return_var['output']);
@@ -139,7 +144,6 @@ function drawHRwithIndex($title)
 
 function fetchVerFromArray($array)
 {
-
     foreach ($array as $line) {
         $result = fetchVerFromString($line);
         if (! empty($result)) {
@@ -148,6 +152,14 @@ function fetchVerFromArray($array)
     }
 
     return 'n/a';
+}
+
+function fetchVerFromMan($array)
+{
+    $last_line = $array[count($array)-1];
+    $last_line = array_values(array_filter(explode(' ', $last_line)));
+    
+    return implode(' ', $last_line);
 }
 
 function fetchVerFromString($string)
@@ -188,7 +200,6 @@ function generateAsDetailsBlock($title, $content)
 </div></details>
 
 EOL;
-
 }
 
 function generateCodeBlock($cmd, $array)
@@ -235,6 +246,11 @@ function generateTitle($title, $version)
 }
 
 /* ---------------------------------------------------------------------- [I] */
+
+function isCmdMan($cmd)
+{
+    return (false !== strpos($cmd, 'man '));
+}
 
 function implodeAndWrodwapArray($array)
 {

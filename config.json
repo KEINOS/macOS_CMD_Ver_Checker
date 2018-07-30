@@ -20,6 +20,10 @@
         "cmd": "git --version"
     },
     {
+        "title": "hexdump",
+        "cmd": "man hexdump"
+    },
+    {
         "title": "java",
         "cmd": "java --version"
     },
