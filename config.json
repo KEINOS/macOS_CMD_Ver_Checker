@@ -78,5 +78,9 @@
     {
         "title": "wget",
         "cmd": "wget --version"
+    },
+    {
+        "title": "dot",
+        "cmd": "dot -V"
     }
 ]
