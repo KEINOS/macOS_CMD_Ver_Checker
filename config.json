@@ -32,6 +32,10 @@
         "cmd": "java --version"
     },
     {
+        "title": "jq",
+        "cmd": "jq --version"
+    },
+    {
         "title": "macOS",
         "cmd": "sw_vers"
     },
