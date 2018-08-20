@@ -12,6 +12,10 @@
         "cmd": "curl --version"
     },
     {
+        "title": "dot",
+        "cmd": "dot -V"
+    },
+    {
         "title": "gcc",
         "cmd": "gcc -v"
     },
@@ -72,15 +76,15 @@
         "cmd": "tidy -v"
     },
     {
+        "title": "tr",
+        "cmd": "man tr"
+    },
+    {
         "title": "vi\/vim",
         "cmd": "vi --version"
     },
     {
         "title": "wget",
         "cmd": "wget --version"
-    },
-    {
-        "title": "dot",
-        "cmd": "dot -V"
     }
 ]
