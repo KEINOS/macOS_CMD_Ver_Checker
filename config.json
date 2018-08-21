@@ -12,8 +12,16 @@
         "cmd": "curl --version"
     },
     {
+        "title": "diff",
+        "cmd": "diff -v"
+    },
+    {
         "title": "dot",
         "cmd": "dot -V"
+    },
+    {
+        "title": "dscl",
+        "cmd": "man dscl"
     },
     {
         "title": "gcc",
@@ -30,6 +38,10 @@
     {
         "title": "java",
         "cmd": "java --version"
+    },
+    {
+        "title": "jot",
+        "cmd": "man jot"
     },
     {
         "title": "jq",
@@ -76,6 +88,14 @@
         "cmd": "python3 --version"
     },
     {
+        "title": "sed",
+        "cmd": "man sed"
+    },
+    {
+        "title": "shuf",
+        "cmd": "man shuf"
+    },
+    {
         "title": "tidy",
         "cmd": "tidy -v"
     },
@@ -90,5 +110,9 @@
     {
         "title": "wget",
         "cmd": "wget --version"
+    },
+    {
+        "title": "xz",
+        "cmd": "xz --version"
     }
 ]
