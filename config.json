@@ -1,5 +1,9 @@
 [
     {
+        "title": "apache",
+        "cmd": "httpd -v"
+    },
+    {
         "title": "bash",
         "cmd": "bash --version"
     },
