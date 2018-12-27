@@ -118,5 +118,9 @@
     {
         "title": "xz",
         "cmd": "xz --version"
+    },
+    {
+        "title": "SQLite3",
+        "cmd": "sqlite3 --version"
     }
 ]
